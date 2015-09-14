@@ -9,7 +9,7 @@ public class Principal {
         
         ClientesManager.carregarLista();
         System.out.println( ClientesManager.listaClientes.get(0).nome );
-        
+        System.out.println("prova netbeams integracion");
     }
     
     
