@@ -1,4 +1,4 @@
-package pacote;
+package informes;
 import java.util.Scanner;
 
 public class Relatorios{
