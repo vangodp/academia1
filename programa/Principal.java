@@ -8,15 +8,21 @@
     */
 
 package programa;
-//import manager.ClienteManager;
 import manager.FileManager;
-import java.util.Scanner;
+import informes.Relatorio;
 
 public class Principal {
     
     public static void main(String[] args) {
-        Menu.principal();
-        FileManager.carregarClientes(); //Carrega un numero indeterminado de clientes predefinidos desde o arquivo clientes.txt
+        Menu.principal();  //Mostrando menú principal
+        
+        System.out.println();
+        FileManager.carregarClientes();     //Carrega un numero indeterminado de clientes predefinidos desde o arquivo clientes.txt
+        Relatorio.clientes();              //Mostrando Clientes carregados na lista
+        
+        System.out.println();
+        FileManager.carregarProfessores(); //Carrega un numero indeterminado de professores predefinidos desde o arquivo professores.txt
+        Relatorio.professores();          //Mostrando Professores carregados na lista
     }
 }
 

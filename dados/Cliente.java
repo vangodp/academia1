@@ -1,10 +1,6 @@
 package dados;
 
-
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class Clientes{  
+public class Cliente{  
     //2. Sobre um cliente, deseja-se manter os dados de cpf, nome, telefone, 
     //e-mail, endereço completo, data de nascimento, sexo, estado civil e 
     //situação (ativo/inativo);
@@ -18,19 +14,18 @@ public class Clientes{
     public String email;           
     public String situacao;
 
-     
+    public Cliente(){}
 
-    public Clientes( String nome,
-                    String sexo,
-                    String dataNascimento,
-                    String estadoCivil,
-                    String cpf,
-                    String telefone,
-                    String endereco,
-                    String email,  
-                    String situacao
-                   )
-    {
+    public Cliente( 
+        String nome,
+        String sexo,
+        String dataNascimento,
+        String estadoCivil,
+        String cpf,
+        String telefone,
+        String endereco,
+        String email,           
+        String situacao ){    
       
         this.nome           = nome;
         this.sexo           = sexo;
@@ -42,12 +37,4 @@ public class Clientes{
         this.email          = email;         
         this.situacao       = situacao;
     }
-    
-    public Clientes(){}
-    
-    
-    
-    
-    
-    
 }    
