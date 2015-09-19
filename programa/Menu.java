@@ -1,8 +1,57 @@
 package programa;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 
-public class Menu {
+public class Menu implements KeyListener {
+    static boolean sair = false;
+    static int op = 0;
+    static int primeiraOpcao = 1;
+    static int ultimaOpcao = 0;
+    @Override
+    public void keyPressed(KeyEvent e) {
+        System.out.println("keyPressed=" + KeyEvent.getKeyText(e.getKeyCode()));
+        
+        op = 1;
+        switch(e.getKeyCode()){
+            case KeyEvent.VK_UP:
+                if ( op == primeiraOpcao){
+                    op = 0;
+                }else{
+                    op--;
+                }
+                break;
+            case KeyEvent.VK_DOWN:
+                if ( op == ultimaOpcao){
+                    op = 0;
+                }else{
+                    op++;
+                }                
+                break;
+            default:
+                break;
+        }
+    }
+
+    @Override
+    public void keyReleased(KeyEvent e) {
+        System.out.println("keyReleased=" + KeyEvent.getKeyText(e.getKeyCode()));
+    }
+
+    @Override
+    public void keyTyped(KeyEvent e) {
+    }    
+    
     
     public static void principal(){
+        sair = false;
+        while ( !sair ){
+            //keyPressed();
+        
+        
+        
+        
+        }
+        
         System.out.println("MENU PRINCIPAL: ");
         System.out.println("1. Agendamento  ");
         System.out.println("2. Registro     ");

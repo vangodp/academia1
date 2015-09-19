@@ -4,17 +4,7 @@ import dados.Cliente;
 
 public class ClienteManager {
     public static ArrayList <Cliente> listaClientes = new ArrayList<>();    
-    
-    public static void carregarLista(){
-        listaClientes.add(new Cliente( 
-                "Ronaldo", "M", "13/07/1986", "InfielXD", 
-                "um Cpf", "123123123", "Rua grande n1", 
-                "jow@tromundo.com", "ComplicadaXD" 
-            ) 
-        ); 
         
-    }//Fin de carregarLista
-    
     public static void carregarCliente(  
         String nome,
         String sexo,

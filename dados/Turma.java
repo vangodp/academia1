@@ -1,11 +1,8 @@
 package dados;
+import java.util.ArrayList;
 
 public class Turma{      
-    //4. Sobre as turmas, deseja-se manter os dados de seu horário, professor, 
-    //e alunos que a compõem;
-    float horario;   // 
-    Professor professor; 
-    //Clientes alunos[];  //TO DO XD?
-    
-
+    public int horario;
+    public Professor professor;            //1 professor max
+    public ArrayList <Turma> listaAlunos; //5 alunos max
 }
